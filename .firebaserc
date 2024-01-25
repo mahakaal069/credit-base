@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "credit-base-65f11": {
+      "hosting": {
+        "credit-base": [
+          "credit-base-65f11"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "credit-base-65f11"
+  }
+}

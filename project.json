@@ -95,6 +95,23 @@
         ],
         "scripts": []
       }
+    },
+    "deploy": {
+      "executor": "@angular/fire:deploy",
+      "options": {
+        "version": 2
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "credit-base:build:production",
+          "serveTarget": "credit-base:serve:production"
+        },
+        "development": {
+          "buildTarget": "credit-base:build:development",
+          "serveTarget": "credit-base:serve:development"
+        }
+      },
+      "defaultConfiguration": "production"
     }
   }
 }

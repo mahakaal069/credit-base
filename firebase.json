@@ -1,0 +1,11 @@
+{
+  "hosting": [
+    {
+      "target": "credit-base",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "asia-east1"
+      }
+    }
+  ]
+}
