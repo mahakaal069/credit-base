@@ -1,4 +1,12 @@
 export const environment = {
     production: true,
-    reCaptchaEnterpriseSiteKey: ''
+    reCaptchaEnterpriseSiteKey: '',
+    projectId: '',
+    appId: '',
+    databaseURL: '',
+    storageBucket: '',
+    apiKey: '',
+    authDomain: '',
+    messagingSenderId: '',
+    measurementId: '',
 }
