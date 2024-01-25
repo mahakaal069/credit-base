@@ -13,8 +13,8 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
 import { firebaseApp, firebaseConfig } from './config/firebase-app-config';
 import { environment } from '../environments/environment';
 
-const reCaptchaEnterpriseSiteKey: string = environment.reCaptchaEnterpriseSiteKey!
-console.log(reCaptchaEnterpriseSiteKey)
+const reCaptchaEnterpriseSiteKey: string = environment['reCaptchaEnterpriseSiteKey'];
+
 export const appConfig: ApplicationConfig = {
     providers: [provideRouter(routes), provideClientHydration(), importProvidersFrom(provideFirebaseApp(() => initializeApp(firebaseConfig))), importProvidersFrom(provideAuth(() => getAuth())), importProvidersFrom(provideAppCheck(() => {
         // TODO get a reCAPTCHA Enterprise here https://console.cloud.google.com/security/recaptcha?project=credit-base-65f11
