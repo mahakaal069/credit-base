@@ -38,6 +38,6 @@ export const appConfig: ApplicationConfig = {
         importProvidersFrom(provideDatabase(() => getDatabase())),
         importProvidersFrom(provideMessaging(() => getMessaging())),
         importProvidersFrom(provideStorage(() => getStorage())),
-        provideAnimations()
+        provideAnimations(),
     ],
 };

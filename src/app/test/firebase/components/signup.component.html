@@ -1,0 +1,13 @@
+<section>
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" #username required />
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" #password required />
+    </div>
+    <div>
+        <button (click)="signup(username.value, password.value)">Submit</button>
+    </div>
+</section>
